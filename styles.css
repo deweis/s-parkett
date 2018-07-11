@@ -1,0 +1,38 @@
+/*
+ * https://material.io/tools/color/#!/?view.left=0&view.right=0&primary.color=A1887F
+ */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  background: #fff url('img/header-background.jpg') no-repeat fixed top center;
+  color: #E1E2E1;
+  height: 50vmin;
+}
+@keyframes rightFadeIn {
+  0% {padding: 10vmin 10vmin 0 30vmin;
+      opacity: 0;}
+  100% {padding: 10vmin 10vmin 0 10vmin;
+      opacity: 1;}
+}
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+header h1 {
+  font-weight: normal;
+  font-size: 9vmin;
+  margin: 0;
+  padding: 10vmin 10vmin 0 10vmin;
+  animation-name: rightFadeIn;
+  animation-duration: 3s;
+}
+header h2 {
+  font-weight: normal;
+  font-size: 5vmin;
+  margin: 0;
+  padding: 2vmin 5vmin 0 15vmin;
+  animation-name: fadeIn;
+  animation-duration: 5s;
+}
