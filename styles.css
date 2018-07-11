@@ -4,12 +4,13 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
-header {
+.header {
+  /* https://www.pexels.com/photo/brown-wooden-surface-218535/*/
   background: #fff url('img/header-background.jpg') no-repeat fixed top center;
   color: #E1E2E1;
   height: 50vmin;
 }
-@keyframes rightFadeIn {
+@keyframes rightFadeIn { /* https://codepen.io/kianoshp/pen/PPeWzb */
   0% {padding: 10vmin 10vmin 0 30vmin;
       opacity: 0;}
   100% {padding: 10vmin 10vmin 0 10vmin;
@@ -20,7 +21,7 @@ header {
   50% {opacity: 0;}
   100% {opacity: 1;}
 }
-header h1 {
+.header h1 {
   font-weight: normal;
   font-size: 9vmin;
   margin: 0;
@@ -28,11 +29,79 @@ header h1 {
   animation-name: rightFadeIn;
   animation-duration: 3s;
 }
-header h2 {
+.header h2 {
   font-weight: normal;
   font-size: 5vmin;
   margin: 0;
   padding: 2vmin 5vmin 0 15vmin;
   animation-name: fadeIn;
   animation-duration: 5s;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+article {
+  color: #715a52;
+  width: 100%;
+  padding: 3vmin;
+  font-size: 5vmin;
+}
+.claim {
+  margin: 5vmin 0;
+}
+.offerings {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.offering {
+  text-align: center;
+  font-size: 7vmin;
+  margin: 0;
+  padding-top: 10%;
+  width: 50%;
+}
+.offering-bg {
+  width: 50%;
+}
+.offering-bg2 {
+  background: url('img/floor2.jpg') no-repeat center;
+  background-size: 250px 250px;
+  padding-top: 50%; /*https://stackoverflow.com/questions/21537806/css-height-same-as-width*/
+}
+.offering-bg3 {
+  background: url('img/floor3.jpg') no-repeat center;
+  background-size: 250px 250px;
+  padding-top: 50%; /*https://stackoverflow.com/questions/21537806/css-height-same-as-width*/
+}
+.offering-bg4 {
+  background: url('img/floor4.jpg') no-repeat center;
+  background-size: 250px 250px;
+  padding-top: 50%; /*https://stackoverflow.com/questions/21537806/css-height-same-as-width*/
+}
+.offering i {
+  font-size: 15vmin;
+}
+@media (min-width: 640px) {
+  .offering {
+    width: 27%;
+    margin: 2vmin;
+    padding-top: 0;
+  }
+  .offering i {
+    font-size: 8vmin;
+  }
+  .offering p {
+    font-size: 4vmin;
+  }
+  .offering-bg {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  main {
+    width: 992px;
+    margin: 0 auto;
+  }
 }
