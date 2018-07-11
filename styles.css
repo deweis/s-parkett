@@ -85,22 +85,16 @@ article {
 }
 @media (min-width: 640px) {
   .offering {
-    width: 27%;
-    /* padding-top: 5%; */
-    margin: 2vmin;
+    width: 33%;
     padding-top: 5%;
   }
-  .offering i {
-    font-size: 8vmin;
-  }
   .offering p {
-    font-size: 4vmin;
+    font-size: 5vmin;
   }
   .offering-bg2 {
     order: 0;
-    width: 28%;
-    margin: 2vmin;
-    padding-top: 25%;
+    width: 33%;
+    padding-top: 33%;
   }
   .offering1 {
     order: 1;
@@ -110,15 +104,13 @@ article {
   }
   .offering-bg3 {
     order: 2;
-    width: 28%;
-    margin: 2vmin;
-    padding-top: 25%;
+    width: 33%;
+    padding-top: 33%;
   }
   .offering-bg4 {
     order: 4;
-    width: 28%;
-    margin: 2vmin;
-    padding-top: 25%;
+    width: 33%;
+    padding-top: 33%;
   }
 }
 @media (min-width: 992px) {
