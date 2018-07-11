@@ -83,6 +83,15 @@ article {
 .offering i {
   font-size: 15vmin;
 }
+footer {
+  /* https://www.pexels.com/photo/brown-wooden-surface-218535/*/
+  background: #fff url('img/header-background.jpg') no-repeat fixed bottom center;
+  color: #E1E2E1;
+  height: 6vmin;
+  text-align: center;
+  padding: 1vmin;
+  font-size: 4vmin;
+}
 @media (min-width: 640px) {
   .offering {
     width: 33%;
@@ -111,6 +120,10 @@ article {
     order: 4;
     width: 33%;
     padding-top: 33%;
+  }
+  footer {
+    font-size: 3vmin;
+    height: 5vmin;
   }
 }
 @media (min-width: 992px) {
