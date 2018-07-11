@@ -86,8 +86,9 @@ article {
 @media (min-width: 640px) {
   .offering {
     width: 27%;
+    /* padding-top: 5%; */
     margin: 2vmin;
-    padding-top: 0;
+    padding-top: 5%;
   }
   .offering i {
     font-size: 8vmin;
@@ -95,8 +96,29 @@ article {
   .offering p {
     font-size: 4vmin;
   }
-  .offering-bg {
-    display: none;
+  .offering-bg2 {
+    order: 0;
+    width: 28%;
+    margin: 2vmin;
+    padding-top: 25%;
+  }
+  .offering1 {
+    order: 1;
+  }
+  .offering2 {
+    order: 3;
+  }
+  .offering-bg3 {
+    order: 2;
+    width: 28%;
+    margin: 2vmin;
+    padding-top: 25%;
+  }
+  .offering-bg4 {
+    order: 4;
+    width: 28%;
+    margin: 2vmin;
+    padding-top: 25%;
   }
 }
 @media (min-width: 992px) {
