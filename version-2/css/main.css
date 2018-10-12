@@ -86,6 +86,14 @@ body {
   background: #514039;
 }
 
+.btn-large:hover {
+  background-color: #e5a247;
+}
+
+.btn-large:focus {
+  background-color: #b3882c;
+}
+
 .section-references {
   margin-top: 50px;
 }
