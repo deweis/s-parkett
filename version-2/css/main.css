@@ -1,13 +1,29 @@
-@keyframes rightFadeIn { /* https://codepen.io/kianoshp/pen/PPeWzb */
-  0% {padding-left: 10vw;
-      opacity: 0;}
-  100% {padding-left: 0;
-      opacity: 1;}
+@keyframes rightFadeIn {
+  /* https://codepen.io/kianoshp/pen/PPeWzb */
+  0% {
+    padding-left: 10vw;
+    opacity: 0;
+  }
+  100% {
+    padding-left: 0;
+    opacity: 1;
+  }
 }
 @keyframes fadeIn {
-  0% {opacity: 0;}
-  50% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* main styling */
+body {
+  color: #514039;
 }
 
 /* Section stylings */
@@ -27,7 +43,7 @@
 }
 
 .transparent {
-  background-color: rgba(255,255,255,0.55) !important;
+  background-color: rgba(255, 255, 255, 0.3) !important;
 }
 
 .side-nav h4 {
@@ -45,7 +61,7 @@
 
 .showcase p {
   animation-name: fadeIn;
-  animation-duration: 5s;
+  animation-duration: 3s;
   font-size: 1.5rem;
 }
 
@@ -54,7 +70,7 @@
   bottom: 5%;
   left: 47%;
   animation-name: fadeIn;
-  animation-duration: 5s;
+  animation-duration: 3s;
   opacity: 0.7;
 }
 

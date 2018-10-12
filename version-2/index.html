@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 
 <head>
+  <meta charset="utf-8">
+
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
@@ -18,7 +20,7 @@
   <title>Steinmann Parkett</title>
 </head>
 
-<body>
+<body id="home">
 
   <!-- Header -->
   <header class="main-header">
@@ -26,7 +28,7 @@
       <nav class="transparent">
         <div class="container">
           <div class="nav-wrapper">
-            <a href="#" class="brand-logo">
+            <a href="#home" class="brand-logo">
               <!-- <span class="brand-name">Steinmann</span> -->
               <img src="img/logo.png" alt="" class="img-responsive">
               <!-- <span class="brand-name">Parkett</span> -->
@@ -36,7 +38,7 @@
             </a>
             <ul class="right hide-on-med-and-down">
               <li>
-                <a class="active-link" href="index.html">Home</a>
+                <a class="active-link" href="#home">Home</a>
               </li>
             </ul>
           </div>
@@ -49,7 +51,7 @@
         <div class="divider"></div>
       </li>
       <li>
-        <a href="index.html"><i class="fa fa-home grey-text text-darken-4"></i> Home</a>
+        <a href="#home"><i class="fa fa-home grey-text text-darken-4"></i> Home</a>
       </li>
     </ul>
     <!-- Showcase -->
@@ -67,16 +69,14 @@
         </div>
       </div>
     </div>
-
   </header>
-
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script>
     $(document).ready(function () {
-      // Init Side Nav
+      // Init SideNav
       $('.button-collapse').sideNav();
     });
   </script>
