@@ -20,7 +20,7 @@
   <title>Steinmann Parkett</title>
 </head>
 
-<body id="home">
+<body id="home" class="scrollspy">
 
   <!-- Header -->
   <header class="main-header">
@@ -43,6 +43,9 @@
               <li>
                 <a href="#offering">Angebot</a>
               </li>
+              <li>
+                <a href="#references">Referenzen</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -59,6 +62,10 @@
       <li>
         <a href="#offering"><i class="far fa-handshake grey-text text-darken-4"></i> Angebot</a>
       </li>
+      <li>
+        <a href="#references"><i class="fas fa-check grey-text text-darken-4"></i> Referenzen</a>
+      </li>
+
     </ul>
     <!-- Showcase -->
     <div class="showcase container">
@@ -151,6 +158,47 @@
     </div>
   </section>
 
+  <!-- Section: References -->
+  <section id="references" class="section section-references scrollspy">
+    <div class="container">
+      <div class="row">
+        <h4 class="center">Referenzen</h4>
+        <p class="center">Lassen Sie sich von einigen meiner bisherigen Projekte inspirieren.</p>
+        <div class="carousel">
+
+          <a class="carousel-item" href="#one!">
+            <img src="img/gallery/Fischgrat.jpg" class="materialboxed" width="100%">
+            <p class="center">Fischgrat</p>
+          </a>
+          <a class="carousel-item" href="#two!">
+            <img src="img/gallery/Klötzliparkett.jpg" class="materialboxed" width="100%">
+            <p class="center">Klötzliparkett</p>
+          </a>
+          <a class="carousel-item" href="#three!">
+            <img src="img/gallery/Landhausdielen.jpg" class="materialboxed" width="100%">
+            <p class="center">Landhausdielen</p>
+          </a>
+          <a class="carousel-item" href="#four!">
+            <img src="img/gallery/Massivparkett.jpg" class="materialboxed" width="100%">
+            <p class="center">Massivparkett</p>
+          </a>
+          <a class="carousel-item" href="#five!">
+            <img src="img/gallery/Terrasse.jpg" class="materialboxed" width="100%">
+            <p class="center">Terrasse</p>
+          </a>
+          <a class="carousel-item" href="#six!">
+            <img src="img/gallery/Treppe mit Kunststoff Stirnbrett.JPG" class="materialboxed" width="100%">
+            <p class="center">Treppe mit Kunststoff Stirnbrett</p>
+          </a>
+          <a class="carousel-item" href="#seven!">
+            <img src="img/gallery/Vinyl.jpg" class="materialboxed" width="100%">
+            <p class="center">Vinyl Boden</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -182,6 +230,11 @@
       // Init ScrollSpy
       $('.scrollspy').scrollSpy({
         scrollOffset: 80 // otherwise it scrolls too far
+      });
+
+      // Initialize the carousel
+      $('.carousel').carousel({
+        dist: -75,
       });
 
     });
