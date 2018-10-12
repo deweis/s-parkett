@@ -178,6 +178,12 @@
       ];
 
       Materialize.scrollFire(options);
+
+      // Init ScrollSpy
+      $('.scrollspy').scrollSpy({
+        scrollOffset: 80 // otherwise it scrolls too far
+      });
+
     });
   </script>
 </body>
