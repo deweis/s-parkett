@@ -160,6 +160,24 @@
       $('.button-collapse').sideNav({
         closeOnClick: true
       });
+
+      // ScrollFire
+      const viewHeight = $(window).height() * 2 - 60; // I.e. navbar not transparent anymore when scrolled 1 times the vh
+
+      const options = [
+        {
+          selector: '.navbar-fixed',
+          offset: viewHeight,   /* should run when we get to that position */
+          callback: function () {
+            $('nav').removeClass('transparent').addClass('white black-text');
+            $('nav ul a, .button-collapse').css({
+              color: '#514039'
+            });
+          }
+        }
+      ];
+
+      Materialize.scrollFire(options);
     });
   </script>
 </body>
