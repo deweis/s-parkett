@@ -82,6 +82,10 @@ body {
   padding: 25px 0;
 }
 
+.btn-large {
+  background: #514039;
+}
+
 @media (max-width: 600px) {
   .brand-logo img {
     max-width: 45px;
