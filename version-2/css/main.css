@@ -74,6 +74,14 @@ body {
   opacity: 0.7;
 }
 
+.section-about {
+  margin-top: 40px;
+}
+
+.section-about h5 {
+  padding: 25px 0;
+}
+
 @media (max-width: 600px) {
   .brand-logo img {
     max-width: 45px;
