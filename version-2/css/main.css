@@ -95,6 +95,14 @@ body {
   cursor: default;
 }
 
+.page-footer {
+  background: #744936;
+}
+
+.page-footer .footer-copyright {
+  background: #6b3e38;
+}
+
 @media (max-width: 600px) {
   .brand-logo img {
     max-width: 45px;
