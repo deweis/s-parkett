@@ -98,6 +98,10 @@ body {
   margin-top: 50px;
 }
 
+.carousel {
+  height: 300px;
+}
+
 .carousel-item p {
   color: #514039;
   cursor: default;
