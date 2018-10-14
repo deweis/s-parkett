@@ -68,7 +68,7 @@ body {
 .scroll-icon {
   position: absolute;
   bottom: 5%;
-  left: 47%;
+  left: 48%;
   animation-name: fadeIn;
   animation-duration: 3s;
   opacity: 0.7;
@@ -123,5 +123,9 @@ body {
   .brand-logo img {
     max-width: 45px;
     padding-top: 7px;
+  }
+
+  .scroll-icon {
+    left: 43%;
   }
 }
