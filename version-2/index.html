@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="description" content="Steinmann parkett - Parkettböden und Böden in Holzoptik - Ihr Partner für Böden aus Holz.">
+  <meta name="keywords" content="Parkett, Parkettboden, Holzboden, Boden in Holzoptik">
 
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -14,6 +16,9 @@
     crossorigin="anonymous">
 
   <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+  <!-- Lazyload: Thank you https://www.andreaverlicchi.eu/lazyload/ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.15.2/lazyload.min.js"></script>
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,7 +35,7 @@
           <div class="nav-wrapper">
             <a href="#home" class="brand-logo">
               <!-- <span class="brand-name">Steinmann</span> -->
-              <img src="img/logo.png" alt="" class="img-responsive">
+              <img src="img/logo.png" alt="" class="img-responsive" alt="Logo">
               <!-- <span class="brand-name">Parkett</span> -->
             </a>
             <a href="#" class="button-collapse" data-activates="mobile-nav">
@@ -112,50 +117,49 @@
         <div class="col s12 m4">
           <div class="card">
             <div class="card-image">
-              <img src="img/floor1.jpg" alt="">
+              <img class="lazy" data-src="img/floor1.jpg" alt="Parkett">
               <span class="card-title">Pflege und Unterhalt</span>
             </div>
             <div class="card-content">
-              <p>Nicht immer muss Ihr Parkettboden geschliffen und neu geölt werden, um Flecken zu entfernen. Sie
-                werden
-                überrascht sein, was eine professionelle Reinigung bewirken kann. Zusätzlich verhilft eine regelmässige
-                Pflege ihrem Parkettboden zu anhaltenden Glanz.</p><br>
-              <p>Gerne zeige ich Ihnen bei einer unverbindlichen Besichtigung die Möglichkeiten auf.</p>
+              <p>Nicht immer muss Ihr Parkettboden geschliffen und neu geölt werden, um Flecken zu entfernen oder den
+                ursprünglichen Glanz wieder herzustellen.</p><br>
+              <p>Sie werden überrascht sein, was eine professionelle Reinigung bewirken kann. Zudem verhilft eine
+                regelmässige Pflege ihrem Boden zu einem langen glänzenden Leben.</p>
             </div>
           </div>
         </div>
         <div class="col s12 m4">
           <div class="card">
             <div class="card-image">
-              <img src="img/floor2.jpg" alt="">
+              <img class="lazy" data-src="img/floor2.jpg" alt="Parkett">
               <span class="card-title">Renovation und Reparatur</span>
             </div>
             <div class="card-content">
-              <p>Tiefe Flecken, Kratzer und Dellen sowie eine starke Abnutzung erfordern verschiedene
-                Herangehensweisen zu unterschiedlichen Kosten.</p><br>
-              <p>Gerne finde ich zusammen mit Ihnen bei einer unverbindlichen Besichtigung den optimalen Weg, um
-                Ihren
-                Parkettboden wieder im ursprünglichen Glanz erscheinen zu lassen</p>
+              <p>Tiefe Flecken, Kratzer und Dellen sowie eine starke Abnutzung erfordern verschiedene Herangehensweisen
+                zu unterschiedlichen Kosten.</p><br>
+              <p>Gerne evaluiere ich mit ihnen zusammen das optimale Vorgehen, um ihren Parkett wieder herzustellen und
+                gleichzeitig die Kosten möglichst tief zu halten.</p>
             </div>
           </div>
         </div>
         <div class="col s12 m4">
           <div class="card">
             <div class="card-image">
-              <img src="img/floor3.jpg" alt="">
+              <img class="lazy" data-src="img/floor3.jpg" alt="Parkett">
               <span class="card-title">Umbau und Neubau</span>
             </div>
             <div class="card-content">
               <p>Sie wünschen sich einen Parkettboden oder wollen Ihren bestehenden einem Umbau unterziehen.</p><br>
-              <p>Ob Fischgrat, Landhausdielen, Massiv- oder Riemenparkett, viele weitere Sorten sowie Böden in
-                Holzoptik aus Laminat oder Vinyl für das kleinere Budget. Gerne finde ich mit Ihnen bei einem
-                unverbindlichen Besichtigungstermin Ihren Traumboden.</p>
+              <p>Fischgrat, Landhausdielen, Massiv- oder Riemenparkett sowie viele weitere Sorten und auch Böden in
+                Holzoptik aus Laminat oder Vinyl für das kleinere Budget, bilden die Basis mit welcher wir ihren
+                Traumboden gestalten können.</p>
             </div>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col s12 center">
+          <p>Kontaktieren sie mich für einen unverbindlichen Besichtigungstermin.</p>
           <a href="#contact" class="btn btn-large waves-effect waves-light">
             <i class="material-icons left">send</i>Kontakt
           </a>
@@ -173,31 +177,32 @@
         <div class="carousel">
 
           <a class="carousel-item" href="#one!">
-            <img src="img/gallery/Fischgrat.jpg" class="materialboxed" width="100%">
+            <img class="lazy materialboxed" data-src="img/gallery/Fischgrat.jpg" width="100%" alt="Fischgratparkett">
             <p class="center">Fischgrat</p>
           </a>
           <a class="carousel-item" href="#two!">
-            <img src="img/gallery/Klötzliparkett.jpg" class="materialboxed" width="100%">
+            <img class="lazy materialboxed" data-src="img/gallery/Klötzliparkett.jpg" width="100%" alt="Klötzliparkett">
             <p class="center">Klötzliparkett</p>
           </a>
           <a class="carousel-item" href="#three!">
-            <img src="img/gallery/Landhausdielen.jpg" class="materialboxed" width="100%">
+            <img class="lazy materialboxed" data-src="img/gallery/Landhausdielen.jpg" width="100%" alt="Landhausdielen">
             <p class="center">Landhausdielen</p>
           </a>
           <a class="carousel-item" href="#four!">
-            <img src="img/gallery/Massivparkett.jpg" class="materialboxed" width="100%">
+            <img class="lazy materialboxed" data-src="img/gallery/Massivparkett.jpg" width="100%" alt="Massivparkett">
             <p class="center">Massivparkett</p>
           </a>
           <a class="carousel-item" href="#five!">
-            <img src="img/gallery/Terrasse.jpg" class="materialboxed" width="100%">
+            <img class="lazy materialboxed" data-src="img/gallery/Terrasse.jpg" width="100%" alt="Parkett auf Terrasse">
             <p class="center">Terrasse</p>
           </a>
           <a class="carousel-item" href="#six!">
-            <img src="img/gallery/Treppe mit Kunststoff Stirnbrett.JPG" class="materialboxed" width="100%">
+            <img class="lazy materialboxed" data-src="img/gallery/Treppe mit Kunststoff Stirnbrett.JPG" width="100%"
+              alt="Treppe mit Kunststoff Stirnbrett">
             <p class="center">Treppe mit Kunststoff Stirnbrett</p>
           </a>
           <a class="carousel-item" href="#seven!">
-            <img src="img/gallery/Vinyl.jpg" class="materialboxed" width="100%">
+            <img class="lazy materialboxed" data-src="img/gallery/Vinyl.jpg" width="100%" alt="Vinyl Boden">
             <p class="center">Vinyl Boden</p>
           </a>
         </div>
@@ -311,7 +316,12 @@
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
+
   <script>
+    var myLazyLoad = new LazyLoad({
+      elements_selector: ".lazy"
+    });
+
     $(document).ready(function () {
       // Init SideNav
       $('.button-collapse').sideNav({

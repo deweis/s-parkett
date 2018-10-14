@@ -87,6 +87,7 @@ body {
 
 .btn {
   background: #514039;
+  z-index: 0;
 }
 
 .btn:hover {
