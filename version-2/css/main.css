@@ -82,15 +82,15 @@ body {
   padding: 25px 0;
 }
 
-.btn-large {
+.btn {
   background: #514039;
 }
 
-.btn-large:hover {
+.btn:hover {
   background-color: #e5a247;
 }
 
-.btn-large:focus {
+.btn:focus {
   background-color: #b3882c;
 }
 
@@ -105,6 +105,10 @@ body {
 .carousel-item p {
   color: #514039;
   cursor: default;
+}
+
+.contact-card {
+  background: #744936;
 }
 
 .page-footer {
