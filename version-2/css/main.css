@@ -79,7 +79,10 @@ body {
 }
 
 .section-about h5 {
-  padding: 25px 0;
+  border-top: 2px solid #e0e0e0; /* grey lighten-2 */
+  border-bottom: 2px solid #e0e0e0; /* grey lighten-2 */
+  line-height: 35px;
+  padding: 45px 0;
 }
 
 .btn {
@@ -128,4 +131,7 @@ body {
   .scroll-icon {
     left: 43%;
   }
+
+  .section-about h5 {
+    line-height: 30px;
 }

@@ -91,14 +91,14 @@
   </header>
 
   <!-- Section: About -->
-  <section class="section section-about scrollspy">
+  <section class="section section-about scrollspy grey-text">
     <div class="container">
       <div class="row">
         <div class="col s12 m8 offset-m2">
-          <hr>
+          <!-- <hr class="grey lighten-2"> -->
           <h5 class="center">Langjährige Erfahrung, die Liebe zum Detail, Kreativität und Leidenschaft für Holz,
             ermöglichen Böden für ihren Wohntraum.</h5>
-          <hr>
+          <!-- <hr class="grey lighten-2"> -->
         </div>
       </div>
     </div>
@@ -242,27 +242,29 @@
           </ul>
         </div>
         <div class="col s12 m6">
-          <div class="card-panel grey lighten-3">
-            <h5>Kontaktformular</h5><br>
-            <hr>
-            <div class="input-field">
-              <input type="text" id="name" placeholder="Name">
-              <label for="name">Name</label>
+          <form id="contact-form" method="post" action="sendForm.php">
+            <div class="card-panel grey lighten-3">
+              <h5>Kontaktformular</h5><br>
+              <hr>
+              <div class="input-field">
+                <input type="text" id="name" placeholder="Name" name="name">
+                <label for="name">Name</label>
+              </div>
+              <div class="input-field">
+                <input type="email" id="email" placeholder="Email" name="email">
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field">
+                <input type="text" id="phone" placeholder="Telefon" name="phone">
+                <label for="phone">Telefon</label>
+              </div>
+              <div class="input-field">
+                <textarea class="materialize-textarea" type="text" id="message" name="message" placeholder="Wie kann ich Ihnen helfen?"></textarea>
+                <label for="message">Mitteilung</label>
+              </div>
+              <input type="submit" value="Abschicken" class="btn waves-effect waves-light">
             </div>
-            <div class="input-field">
-              <input type="email" id="email" placeholder="Email">
-              <label for="email">Email</label>
-            </div>
-            <div class="input-field">
-              <input type="text" id="phone" placeholder="Telefon">
-              <label for="phone">Telefon</label>
-            </div>
-            <div class="input-field">
-              <textarea class="materialize-textarea" type="text" id="message" placeholder="Wie kann ich Ihnen helfen?"></textarea>
-              <label for="message">Mitteilung</label>
-            </div>
-            <input type="submit" value="Abschicken" class="btn waves-effect waves-light">
-          </div>
+          </form>
         </div>
       </div>
     </div>
@@ -294,6 +296,17 @@
       </div>
     </div>
   </footer>
+
+  <!-- Modal on Contact -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
