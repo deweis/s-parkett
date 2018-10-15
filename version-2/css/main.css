@@ -115,6 +115,16 @@ body {
   background: #744936;
 }
 
+/* https://stackoverflow.com/questions/51244874/hiding-spin-buttons-on-number-input-html-ionic */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
 .page-footer {
   background: #744936;
 }
