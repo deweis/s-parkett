@@ -8,6 +8,7 @@
 
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 
@@ -323,13 +324,17 @@
     </div>
   </div>
 
+  <!-- Modernizr - background image to webp if supported by the browser  -->
+  <script src="https://cdn.jsdelivr.net/modernizr/3.3.1/modernizr.min.js"></script>
+
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
 
   <script>
     var myLazyLoad = new LazyLoad({
-      elements_selector: ".lazy"
+      elements_selector: ".lazy",
+      to_webp: true
     });
 
     $(document).ready(function () {

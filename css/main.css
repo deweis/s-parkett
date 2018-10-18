@@ -41,8 +41,14 @@ body {
 }
 
 /* Section stylings */
-.main-header {
+.no-webp .main-header {
   background: url('../img/header-background.jpg');
+}
+.webp .main-header {
+  background: url('../img/header-background.webp');
+}
+
+.main-header {
   background-size: cover;
   background-position: center;
   height: 100vh;
