@@ -41,8 +41,14 @@ body {
 }
 
 /* Section stylings */
-.main-header {
+.no-webp .main-header {
   background: url('../img/header-background.jpg');
+}
+.webp .main-header {
+  background: url('../img/header-background.webp');
+}
+
+.main-header {
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -54,6 +60,20 @@ body {
 .brand-logo img {
   max-width: 48px;
   padding-top: 8px;
+}
+
+.side-nav {
+  width: 350px;
+}
+
+.brand-logo-sidenav {
+  max-width: 45px;
+  margin: 8px;
+}
+
+.sidenav-brand {
+  font-size: 1.8em;
+  padding-left: 6px;
 }
 
 .transparent {
@@ -88,11 +108,11 @@ body {
   opacity: 0.7;
 }
 
-.section-about {
+.section-quote {
   margin-top: 40px;
 }
 
-.section-about h5 {
+.section-quote h5 {
   border-top: 2px solid #e0e0e0; /* grey lighten-2 */
   border-bottom: 2px solid #e0e0e0; /* grey lighten-2 */
   line-height: 35px;
@@ -112,7 +132,12 @@ body {
   background-color: #b3882c;
 }
 
-.section-references {
+.about-text {
+  flex-wrap: wrap;
+}
+
+.section-references,
+.section-about {
   margin-top: 50px;
 }
 
@@ -153,11 +178,19 @@ input[type='number'] {
     padding-top: 7px;
   }
 
+  .side-nav {
+    width: 100vw;
+  }
+
   .scroll-icon {
     left: 43%;
   }
 
-  .section-about h5 {
+  .section-quote h5 {
     line-height: 30px;
+  }
+
+  .about-text {
+    text-align: center;
   }
 }
