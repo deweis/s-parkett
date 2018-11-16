@@ -10,7 +10,7 @@
 
   $email_from = 'dweiss@dvice.ch';
 
-  $email_subject = "Kontakformular Webseite";
+  $email_subject = "Kontakformular Webseite - Steinmann Parkett";
 
   $email_body = "Name: $name\n".
                 "Email: $visitor_email\n".
